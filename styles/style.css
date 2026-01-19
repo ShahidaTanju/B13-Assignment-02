@@ -146,3 +146,50 @@ nav .nav-list li a {
     padding-right: 5px;
     width: 18px;
 }
+
+
+/* podcast style */
+
+.podcast-section {
+    text-align: center;
+}
+
+.podcast-header {
+    font-size: 40px;
+    color: #FFFFFF;
+    padding-top: 100px;
+    padding-bottom: 3px;
+}
+
+.podcast-description {
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+/* .horizontal {
+    width: 1000px;
+    align-content: center;
+    border: 1px solid rgb(0, 0, 0);
+} */
+
+.podcast-card {
+    display: flex;
+    padding-top: 120px;
+    padding-left: 300px;
+    gap: 15px;
+}
+
+.podcast-card-container {
+    width: 200px;
+    height: 80px;
+}
+
+.podcast-card-container h2 {
+    color: #00FF88;
+    font-size: 35px;
+}
+
+.podcast-card-container p {
+    color: #FFFFFF;
+    font-size: 14px;
+}
