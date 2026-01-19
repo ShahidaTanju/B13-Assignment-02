@@ -8,6 +8,141 @@
 }
 
 
-.bg-color {
-    background-color: blue;
+/* shared style */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.btn {
+    background: linear-gradient(47.64deg, rgba(247, 233, 63, 1) 16.531%, rgba(251, 9, 180, 1) 49.819%, rgba(145, 0, 248, 1) 81.648%);
+    color: #FFFFFF;
+    padding: 7px 9px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+/* navbar style */
+
+header {
+    background-color: #1A0B2E;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 180px;
+    padding-right: 180px;
+    padding-bottom: 24px;
+    padding-top: 18px;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+nav .nav-list {
+    display: flex;
+    gap: 40px;
+    list-style-type: none;
+}
+
+nav .nav-list li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 14px;
+
+}
+
+.logo {
+    font-size: 1.2rem;
+}
+
+.tech {
+    color: #FFFFFF;
+}
+
+.wave {
+    background: linear-gradient(90deg, #ff4fd8 0%, #a855f7 50%, #6b2cf5 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+
+/* banner style */
+
+.banner-image {
+    width: 1340px;
+    height: 550px;
+    padding-top: 40px;
+}
+
+.circle {
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    width: 274px;
+    height: 274px;
+}
+
+.badge {
+    position: absolute;
+    top: 33%;
+    left: 56%;
+    color: #1A0B2E;
+    background: #00FF88;
+    border: none;
+    padding: 5px 7px;
+    border-radius: 5px;
+    font-size: xx-small;
+}
+
+.microphone {
+    position: absolute;
+    top: 40%;
+    left: 46%;
+    width: 110px;
+    height: 140px;
+}
+
+.banner-container {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.banner-title {
+    font-size: 50px;
+    color: #FFFFFF;
+}
+
+.banner-description {
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+.message-btn {
+    border: 1px solid #00FF88;
+    color: #00FF88;
+    background: transparent;
+    padding: 7px 9px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.banner-btn {
+    margin-top: 10px;
+}
+
+.banner-btn-1 {
+    padding-right: 5px;
+    width: 15px;
+}
+
+.banner-btn-2 {
+    padding-right: 5px;
+    width: 18px;
 }
