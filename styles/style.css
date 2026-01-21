@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-
-
 .goggle-font-inter {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
@@ -74,7 +72,8 @@ nav .nav-list li a {
 
 .hamburger {
     display: none;
-    flex-direction: column;
+    width: 28px;
+    cursor: pointer;
 }
 
 
@@ -129,6 +128,15 @@ nav .nav-list li a {
     color: #FFFFFF;
 }
 
+.btn-spotify {
+    background: linear-gradient(47.64deg, rgba(247, 233, 63, 1) 16.531%, rgba(251, 9, 180, 1) 49.819%, rgba(145, 0, 248, 1) 81.648%);
+    color: #FFFFFF;
+    padding: 7px 9px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
 .message-btn {
     border: 1px solid #00FF88;
     color: #00FF88;
@@ -171,11 +179,6 @@ nav .nav-list li a {
     color: #FFFFFF;
 }
 
-/* .horizontal {
-    width: 1000px;
-    align-content: center;
-    border: 1px solid rgb(0, 0, 0);
-} */
 
 .podcast-card {
     display: flex;
@@ -362,22 +365,216 @@ nav .nav-list li a {
     height: 350px;
 }
 
-.footer-logo {
+.footer {
     position: relative;
-    /* top: 50%;
-    left: 35%; */
-    pad: 80px 20px;
+}
+
+.footer-content {
+    position: absolute;
+    bottom: 130px;
+    left: 530px;
+    z-index: 2;
+    gap: 5px;
+}
+
+.logo-2 {
+    font-size: 1.8rem;
+}
+
+.footer-socials {
+    display: flex;
+}
+
+.footer-socials a {
+    color: #FFFFFF;
+    gap: 6px;
+    text-decoration: none;
+}
+
+.footer-content p {
+    color: #FFFFFF;
+    font-size: 14px;
+    opacity: 0.6;
+}
+
+.footer-socials {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.icon-twitter {
+    font-size: 16px;
+    color: #FFFFFF;
+    padding-right: 65px;
 }
 
 
 /* responsive media query */
 
 @media screen and (max-width: 576px) {
-    .nav-list {
+
+    .nav-list a,
+    .btn {
         display: none;
     }
 
     .hamburger {
+        display: block;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 24px;
+        padding-top: 18px;
+        border: 1px solid rgb(0, 0, 0);
+    }
+
+    .banner-image {
+        width: 550px;
+        height: 300px;
+        padding-top: 20px;
+    }
+
+    .circle {
+        position: absolute;
+        top: 25%;
+        left: 35%;
+        width: 174px;
+        height: 174px;
+    }
+
+    .microphone {
+        position: absolute;
+        top: 35%;
+        left: 44%;
+        width: 70px;
+        height: 70px;
+    }
+
+    .badge {
+        position: absolute;
+        top: 25%;
+        left: 56%;
+        color: #1A0B2E;
+        background: #00FF88;
+        border: none;
+        padding: 5px 7px;
+        border-radius: 5px;
+        font-size: xx-small;
+    }
+
+    .podcast-card {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding-top: 120px;
+        padding-left: 100px;
+        gap: 15px;
+        padding-bottom: 70px;
+    }
+
+    .podcast-card-container h2 {
+        color: #00FF88;
+        font-size: 45px;
+    }
+
+    .podcast-card-container p {
+        color: #FFFFFF;
+        font-size: 18px;
+    }
+
+    .techwave-section {
+        background: rgba(35, 14, 61, 1);
+        padding-top: 60px;
+        padding-left: 60px;
+        padding-right: 60px;
+        padding-bottom: 60px;
+    }
+
+    .feature-card-1,
+    .feature-card-2 {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .card-1,
+    .card-4 {
+        width: 400px;
+        height: 287px;
+    }
+
+    .card-2,
+    .card-3,
+    .card-5 {
+        width: 400px;
+        height: 220px;
+    }
+
+    .host-section {
+        width: 500px;
+        height: 240px;
+        display: flex;
+        border-radius: 40px;
+    }
+
+    .feature-card {
         display: flex;
     }
+
+
+    .host {
+        padding-left: 30px;
+    }
+
+    .host-img img {
+        height: 180px;
+        width: 180px;
+    }
+
+    .host-details {
+        width: 320px;
+        height: 200px;
+        padding-left: 20px;
+        color: #FFFFFF;
+    }
+
+    .host-details h3 {
+        font-size: 20px;
+        padding-bottom: 3px;
+    }
+
+    .host-details p {
+        font-size: 12px;
+        padding-bottom: 5px;
+    }
+
+    .footer-image {
+        width: 580px;
+        height: 300px;
+    }
+
+    .footer-content {
+        position: absolute;
+        bottom: 100px;
+        left: 180px;
+        z-index: 1;
+
+    }
+
+    .logo-2 {
+        font-size: 1.3rem;
+    }
+
+    .footer-socials {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2px;
+    }
+
+
 }
