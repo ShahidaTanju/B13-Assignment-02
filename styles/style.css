@@ -307,6 +307,19 @@ nav .nav-list li a {
     padding-bottom: 30px;
 }
 
+.feature-card {
+    display: flex;
+    padding-left: 130px;
+    padding-right: 130px;
+}
+
+
+/* .feature-1 {
+    height: 300px;
+    width: 330px;
+    background: rgba(53, 17, 101, 0.4);
+} */
+
 /* challenge style */
 
 .host-section {
@@ -339,6 +352,21 @@ nav .nav-list li a {
 .host-details p {
     font-size: 14px;
     padding-bottom: 10px;
+}
+
+
+/* footer style */
+
+.footer-image {
+    width: 1350px;
+    height: 350px;
+}
+
+.footer-logo {
+    position: relative;
+    /* top: 50%;
+    left: 35%; */
+    pad: 80px 20px;
 }
 
 
