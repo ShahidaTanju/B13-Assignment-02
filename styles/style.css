@@ -310,18 +310,53 @@ nav .nav-list li a {
     padding-bottom: 30px;
 }
 
-.feature-card {
-    display: flex;
-    padding-left: 130px;
-    padding-right: 130px;
+.feature-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-left: 80px;
+    padding-right: 70px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
-
-/* .feature-1 {
-    height: 300px;
-    width: 330px;
+.feature-card {
+    border: 1px solid rgba(53, 17, 101, 0.4);
     background: rgba(53, 17, 101, 0.4);
-} */
+    width: 370px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+
+.video-content {
+    width: 100%;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.video-content h3,
+.video-content p {
+    width: 100%;
+    color: #FFFFFF;
+}
+
+.video-content h3 {
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.video-content p {
+    font-size: 16px;
+    gap: 10px;
+}
+
+.p-1 {
+    padding-bottom: 10px;
+}
+
+.p-2 img {
+    align-items: center;
+    gap: 5px;
+}
 
 /* challenge style */
 
@@ -415,6 +450,12 @@ nav .nav-list li a {
 
 @media screen and (max-width: 576px) {
 
+    html,
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
     .nav-list a,
     .btn {
         display: none;
@@ -491,7 +532,7 @@ nav .nav-list li a {
     .techwave-section {
         background: rgba(35, 14, 61, 1);
         padding-top: 60px;
-        padding-left: 60px;
+        padding-left: 80px;
         padding-right: 60px;
         padding-bottom: 60px;
     }
@@ -522,8 +563,27 @@ nav .nav-list li a {
         border-radius: 40px;
     }
 
+
+    .feature-cards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding-left: 100px;
+        padding-right: 20px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
     .feature-card {
-        display: flex;
+        width: 370px;
+        padding-bottom: 10px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+
+    .video-content {
+        width: 100%;
+        /* padding-left: 10px; */
+        padding-top: 5px;
     }
 
 
